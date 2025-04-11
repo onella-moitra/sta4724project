@@ -13,7 +13,7 @@ Anthony Beuke
 import cv2
 import numpy as np
 
-#Threshold Code (I'm a bit lost hehe)
+#Contour Code (I'm a bit lost hehe)
 
 _, _, contour, _ = cv2.findContours(threshold, cv2.RETR_TREE, cv.2CHAIN_APPROX_SIMPLE)
 for cnt in contours:

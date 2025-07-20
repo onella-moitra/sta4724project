@@ -29,5 +29,5 @@ In a world full of distractions, Tattletale helps users stay on task by monitori
 - If no eyes are detected for a set duration, the app triggers a Tkinter popup reminding the user to stay focused.
 - A separate thread runs the popup so that it doesn't freeze the tracking loop.
 
-## Eye Detection Logic (Explained Without Code)
+## Eye Detection Logic
 The core of the system uses a Haar Cascade Classifier, a tool based on the Viola-Jones algorithm. It loads a pre-trained model from OpenCV's built-in library that is specifically designed to detect eyes. This classifier scans each frame for patterns that resemble eye-like features. If it doesn't find those features in a given frame, the system interprets it as a loss of focus and reacts by displaying a popup.
